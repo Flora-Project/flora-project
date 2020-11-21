@@ -1,0 +1,797 @@
+.covid-heading {
+    margin-bottom: 3.5rem;
+
+    margin-top: 22.4rem;
+
+    @media only screen and (max-width: $bp-800) {
+        margin-top: 16rem;
+    }
+
+
+    @media only screen and (max-width: $bp-600) {
+        margin-top: 21rem;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: $font-tertiary;
+        font-weight: normal;
+        font-size: 8.3rem;
+        line-height: 6.7rem;
+        letter-spacing: 0.02em;
+        color: #56A099;
+        margin: 2rem 1rem;
+
+        @media only screen and (max-width: $bp-650) {
+            font-size: 5rem;
+            line-height: 4.7rem;
+        }
+
+        span {
+            display: block;
+        }
+    }
+}
+
+
+// <!-- /////////////Section toma -->
+
+
+.toma {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+
+    @media only screen and (max-width: $bp-1000) {
+        grid-template-columns: 1fr 1.5fr;
+        grid-column-gap: 0;
+    }
+
+    @media only screen and (max-width: $bp-700) {
+        grid-template-columns: 1fr;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+
+        &--gen {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+
+            @media only screen and (max-width: $bp-1000) {
+                display: none;
+            }
+
+            @media only screen and (max-width: $bp-700) {
+                display: block;
+            }
+        }
+
+        &--res {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+            @media only screen and (max-width: $bp-1000) {
+                display: block;
+            }
+
+            @media only screen and (max-width: $bp-700) {
+                display: none;
+            }
+        }
+
+    }
+
+    &__content {
+        width: 75%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: $bp-1000) {
+            width: 85%;
+        }
+
+        @media only screen and (max-width: $bp-500) {
+            width: 90%;
+        }
+    }
+
+    &__heading {
+        font-family: Avenir;
+        text-align: center;
+        margin-top: 2rem;
+
+
+        &--primary {
+            font-size: 2.1rem;
+            line-height: 2.9rem;
+            text-align: center;
+            color: #56A099;
+            letter-spacing: 0.02em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: normal;
+            margin-bottom: 3rem;
+
+            @media only screen and (max-width: $bp-1000) {
+                font-size: 1.7rem;
+            }
+
+            @media only screen and (max-width: $bp-700) {
+                margin-top: 3rem;
+            }
+        }
+
+        &--secondary {
+            margin-bottom: 2rem;
+            font-weight: normal;
+            font-size: 1.7rem;
+            line-height: 2.3rem;
+            letter-spacing: 0.09em;
+            color: #D69E8A;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media only screen and (max-width: $bp-1000) {
+                display: inline-block;
+                text-align: left;
+                padding-right: 1rem;
+                font-size: 1.5rem;
+            }
+
+            @media only screen and (max-width: $bp-700) {
+                font-size: 1.5rem;
+
+            }
+        }
+
+        &--tertiary {
+            font-weight: bold;
+            color: #80A6D1;
+            font-size: 2.1rem;
+            line-height: 2.9rem;
+            letter-spacing: 0.09em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8rem;
+
+            @media only screen and (max-width: $bp-1000) {
+                margin-bottom: 3rem;
+            }
+
+            @media only screen and (max-width: $bp-700) {
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            @media only screen and (max-width: $bp-600) {
+                font-size: 17px;
+                line-height: 23px;
+                text-align: center;
+                letter-spacing: 0.09em;
+                color: #80A6D1;
+            }
+
+
+        }
+
+    }
+
+    &__text {
+        font-size: 17px;
+        line-height: 27px;
+        text-align: justify;
+        margin-bottom: 2rem;
+        letter-spacing: 0.02em;
+        color: #998F8A;
+
+        @media only screen and (max-width: $bp-1000) {
+            font-size: 1.5rem;
+        }
+
+        @media only screen and (max-width: $bp-550) {
+            padding: 0 1rem;
+        }
+
+        span {
+            color: #D69E8A;
+        }
+    }
+
+}
+
+
+///////////////////////////////         Hacer Section
+
+.hacer {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin-top: 7rem;
+
+    @media only screen and (max-width: $bp-1000) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-700) {
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+    }
+
+    &__left {
+        width: 70%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: $bp-1000) {
+            width: 80%;
+        }
+
+        @media only screen and (max-width: $bp-600) {
+            width: 90%;
+        }
+
+
+
+    }
+
+    &__heading {
+
+        &--primary {
+            font-weight: normal;
+            font-size: 21px;
+            line-height: 29px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #56A099;
+            margin-bottom: 3rem;
+            margin-top: 3rem;
+
+            @media only screen and (max-width: $bp-1000) {
+                font-size: 1.7rem;
+            }
+
+        }
+
+        &--secondary {
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 23px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.09em;
+            color: #D69E8A;
+            margin-bottom: 1.5rem;
+
+            @media only screen and (max-width: $bp-1000) {
+                font-size: 1.5rem;
+            }
+        }
+
+        &--tertiary {
+            font-weight: normal;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 21px;
+            line-height: 29px;
+            text-align: center;
+            margin-bottom: 3rem;
+            letter-spacing: 0.09em;
+            color: #80A6D1;
+
+            @media only screen and (max-width: $bp-1000) {
+                font-size: 1.7rem;
+            }
+
+            @media only screen and (max-width: $bp-700) {
+                font-weight: bold;
+            }
+
+        }
+    }
+
+    &__desc {
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 27px;
+        margin-bottom: 4rem;
+        text-align: justify;
+        letter-spacing: 0.02em;
+        color: #998F8A;
+
+        @media only screen and (max-width: $bp-1000) {
+            font-size: 1.5rem;
+        }
+
+        @media only screen and (max-width: $bp-600) {
+            margin-bottom: 2rem;
+
+        }
+
+
+        span {
+            color: #D69E8A;
+        }
+    }
+
+    &__right {
+        width: 100%;
+        height: 100%;
+
+        @media only screen and (max-width: $bp-700) {
+            order: -1;
+            // margin-top: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+/////////////////////////////////////////////////////
+////////////////////////////        Sectopn Tipo
+
+.tipo {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 4rem;
+
+    @media only screen and (max-width: $bp-1000) {
+        width: 90%;
+        margin-bottom: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-600) {
+        margin-bottom: 4rem;
+    }
+
+
+    &__heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #56A099;
+        margin-bottom: 1.5rem;
+
+        @media only screen and (max-width: $bp-1000) {
+            font-size: 17px;
+            line-height: 23px;
+        }
+
+        @media only screen and (max-width: $bp-500) {
+            display: inline-block;
+        }
+
+
+    }
+
+    &__text {
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 27px;
+        text-align: justify;
+        letter-spacing: 0.02em;
+        color: #998F8A;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-1000) {
+            font-size: 15px;
+        }
+
+        span {
+            color: #D69E8A;
+        }
+    }
+
+    &__heading--btm {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #80A6D1;
+
+        @media only screen and (max-width: $bp-1000) {
+            font-size: 17px;
+            line-height: 23px;
+        }
+    }
+}
+
+
+
+//////////////////////////////////////////
+///////////////         Section Pasa
+
+.pasa {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 45rem;
+    margin-top: 3rem;
+
+    @media only screen and (max-width: $bp-1000) {
+        grid-template-columns: 1.2fr 1.5fr;
+        grid-template-rows: 40rem;
+    }
+
+    @media only screen and (max-width: $bp-700) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: $bp-1000) {
+            width: 85%;
+        }
+
+        @media only screen and (max-width: $bp-700) {
+            margin-top: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-500) {
+            width: 90%;
+        }
+
+
+        &--heading-up {
+            font-weight: normal;
+            font-size: 21px;
+            line-height: 29px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            margin-bottom: 3rem;
+            color: #56A099;
+
+            @media only screen and (max-width: $bp-1000) {
+                font-size: 17px;
+                line-height: 23px;
+                margin-bottom: 2rem;
+            }
+
+
+        }
+
+        &--text {
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 27px;
+            margin-bottom: 3rem;
+            text-align: justify;
+            letter-spacing: 0.02em;
+            color: #998F8A;
+
+            @media only screen and (max-width: $bp-1000) {
+                font-size: 15px;
+                margin-bottom: 2rem;
+            }
+
+            span {
+                color: #D69E8A;
+            }
+        }
+
+        &--heading-down {
+            font-weight: normal;
+            font-size: 21px;
+            line-height: 29px;
+            text-align: center;
+            letter-spacing: 0.09em;
+            color: #80A6D1;
+
+            @media only screen and (max-width: $bp-1000) {
+                font-size: 17px;
+                line-height: 23px;
+            }
+
+            @media only screen and (max-width: $bp-500) {}
+
+
+
+        }
+    }
+}
+
+
+
+
+///////////////////////////////////////////////////
+/////////////////////////       Especial Section
+
+.especial {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin-top: 8rem;
+
+    @media only screen and (max-width: $bp-1000) {
+        grid-template-columns: 1.5fr 1.2fr;
+    }
+
+    @media only screen and (max-width: $bp-700) {
+        grid-template-columns: 1fr;
+    }
+
+    @media only screen and (max-width: $bp-500) {
+        margin-top: 5rem;
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 78%;
+        margin: 0 auto;
+        padding: 2.5rem 0;
+
+        @media only screen and (max-width: $bp-1000) {
+            width: 85%;
+        }
+
+        @media only screen and (max-width: $bp-600) {
+            width: 90%;
+        }
+
+
+
+        &--heading {
+            font-weight: normal;
+            font-size: 21px;
+            line-height: 29px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #56A099;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3rem;
+
+            @media only screen and (max-width: $bp-500) {
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+            }
+
+        }
+    }
+
+    &__list {}
+
+    &__item {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-column-gap: 1.2rem;
+
+        @media only screen and (max-width: $bp-500) {
+            grid-column-gap: 1rem;
+
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+
+        &--dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: #D69E8A;
+            margin-top: 8px;
+        }
+
+
+        &--content {
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 27px;
+            text-align: justify;
+            letter-spacing: 0.02em;
+
+            @media only screen and (max-width: $bp-1000) {
+                text-align: justify;
+            }
+
+
+            &--heading {
+                color: #80A6D1;
+            }
+
+            &--text {
+                color: #998F8A;
+
+                span {
+                    color: #D69E8A !important;
+                }
+            }
+        }
+
+    }
+
+
+
+    &__img {
+        width: 100%;
+        height: 100%;
+
+        @media only screen and (max-width: $bp-700) {
+            order: -1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+/////////////////////////////////////
+///////////////////     Mas Section
+
+.mas {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12rem auto;
+
+    @media only screen and (max-width: $bp-950) {
+        width: 90%;
+        margin: 5rem auto;
+    }
+
+    @media only screen and (max-width: $bp-600) {
+        margin-top: 0rem;
+    }
+
+    &__search {
+        width: 100%;
+        text-align: right;
+        margin-bottom: 4rem;
+
+        @media only screen and (max-width: $bp-950) {
+            margin-bottom: 2rem;
+        }
+
+        i {
+            font-size: 1.6rem;
+            text-align: right;
+            color: #56A099;
+        }
+    }
+
+    &__dropdown {
+
+        // display: grid;
+        // grid-template-columns: 1fr min-content;
+        // grid-column-gap: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #9E9E9E;
+        padding-bottom: 0.5rem;
+
+    }
+
+    &__text {
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 37px;
+        letter-spacing: 0.02em;
+        color: #56A099;
+
+        @media only screen and (max-width:$bp-700) {
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    &__icon {
+        font-size: 2.6rem;
+        color: #56A099;
+    }
+}
+
+
+.covid-btn {
+    width: 100%;
+    height: 35rem;
+    background: #E4C2AF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-600) {
+        height: 12rem;
+    }
+
+    button {
+        width: 80rem;
+        height: 17rem;
+        border-radius: 150px;
+        background-color: $color-white;
+        outline: none;
+        border: none;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150.5%;
+        text-align: center;
+        letter-spacing: 0.09em;
+        color: #D69E8A;
+
+        a {
+            color: #D69E8A;
+        }
+
+        @media only screen and (max-width: $bp-950) {
+            width: 58rem;
+            height: 14rem;
+            padding: 0 8rem;
+        }
+
+        @media only screen and (max-width: $bp-600) {
+            width: 90%;
+            height: 5.5rem;
+            font-size: 13px;
+            line-height: 150.5%;
+            padding: 0 1rem;
+        }
+    }
+}
+
+.text-left {
+    text-align: left !important;
+}

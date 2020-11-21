@@ -1,0 +1,98 @@
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: -1.5rem;
+
+
+
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        position: relative;
+
+
+        &--box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 20rem;
+
+            @media only screen and (max-width: $bp-1000) {
+                height: 14rem;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+
+    }
+
+}
+
+
+
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    top: 50%;
+    right: 0.5%;
+    transform: translate(-5%, -50%);
+    font-size: 2.5rem !important;
+    color: #fff !important;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    top: 50%;
+    left: 0.5%;
+    transform: translate(5%, -50%);
+    font-size: 2.5rem !important;
+    color: #fff !important;
+}
+
+
+
+.owl-dots {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.owl-dots button.owl-dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #C4C4C4 !important;
+    margin: 0 3px;
+}
+
+.owl-dots button.owl-dot.active {
+    background: #D69E8A !important;
+}
+
+.owl-dots button.owl-dot:focus {
+    outline: none;
+}

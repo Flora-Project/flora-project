@@ -1,0 +1,473 @@
+.chat-container {
+    width: 100%;
+    height: 223rem;
+    padding: 5rem 9rem;
+    background: url('../img/tahe/chat\ back.png') no-repeat center center/cover, #FCEFE7;
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 5rem;
+
+
+
+    @media only screen and (max-width: $bp-950) {
+        padding: 3rem;
+        height: 224rem;
+    }
+
+    @media only screen and (max-width: $bp-850) {
+        height: 220rem;
+    }
+
+    @media only screen and (max-width: $bp-700) {
+        height: 210rem;
+    }
+
+    @media only screen and (max-width: $bp-650) {
+        height: 230rem;
+    }
+
+    @media only screen and (max-width: $bp-500) {
+        height: 227rem;
+    }
+
+    @media only screen and (max-width: $bp-450) {
+        height: 219rem;
+    }
+
+    @media only screen and (max-width: 375px) {
+        height: 220rem;
+    }
+
+    @media only screen and (max-width: 370px) {
+        height: 222rem;
+    }
+
+    &__content {
+        background: $color-white;
+        width: 100%;
+
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 1%);
+        margin: 0 auto;
+        width: 35rem;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+
+        }
+    }
+
+    &__blog-heading {
+        font-size: 7rem;
+        font-family: $font-secondary;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #80A6D1;
+        font-weight: normal;
+        // margin-bottom: 5rem;
+
+        @media only screen and (max-width: $bp-650) {
+            font-size: 5rem;
+        }
+    }
+}
+
+
+.chat__nav {
+    font-family: palmbeach;
+    font-size: 3rem;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-around;
+    color: #D69E8A;
+    padding: 5rem;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-950) {
+        padding: 5rem 2rem;
+        font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-750) {
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-650) {
+        font-size: 1.4rem;
+        padding: 2rem 1rem;
+    }
+
+    &--name {}
+
+    &--logo {
+        width: 14rem;
+
+        @media only screen and (max-width: $bp-800) {
+            width: 8rem;
+        }
+
+        @media only screen and (max-width: $bp-650) {
+            width: 5rem;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &--tahe {}
+}
+
+.chat-heading {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__primary {
+        font-size: 10rem;
+        font-family: $font-secondary;
+        font-weight: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #D69E8A;
+        line-height: 10rem;
+        text-align: center;
+        margin-bottom: 6rem;
+
+        @media only screen and (max-width: $bp-800) {
+            margin-bottom: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-700) {
+            font-size: 5rem;
+            line-height: 1;
+        }
+
+        @media only screen and (max-width: $bp-500) {
+            font-size: 4rem;
+            line-height: 1;
+        }
+
+    }
+
+    &__text {
+        color: #80A6D1;
+        font-weight: normal;
+        font-size: 2.5rem;
+        letter-spacing: 1.2px;
+
+        @media only screen and (max-width: $bp-800) {
+            font-size: 2.5rem;
+            padding: 0 3rem;
+        }
+
+        @media only screen and (max-width: $bp-700) {
+            font-size: 1.8rem;
+        }
+
+        @media only screen and (max-width: $bp-400) {
+            font-size: 1.4rem;
+            padding: 0;
+        }
+
+    }
+}
+
+.chat__email {
+    margin: 3rem 0;
+
+    &--group {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &--input {
+        width: 100%;
+        height: 5rem;
+        padding: 0rem 1.5rem;
+        outline: none;
+        border: 1px solid #D69E8A;
+        background-color: $color-white;
+        font-size: 1.6rem;
+
+        &::placeholder {
+            color: #D69E8A;
+            font-weight: normal;
+            letter-spacing: 1.3px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    &--btn {
+        font-size: 1.6rem;
+        color: #D69E8A;
+        padding: .71rem 10rem;
+        border: 0.2px solid #D69E8A;
+        background-color: $color-white;
+        border-radius: 50px;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        margin-top: 2rem;
+        transition: all 0.3s;
+        outline: none;
+
+        @media only screen and (max-width: $bp-800) {
+            font-size: 1.8rem;
+            padding: 0.8rem 10rem;
+            margin-top: 1rem;
+        }
+
+        @media only screen and (max-width: $bp-400) {
+            padding: 1.2rem 5rem;
+        }
+
+
+        &:hover {
+            background-color: #D69E8A;
+            cursor: pointer;
+            color: $color-white;
+        }
+    }
+}
+
+.chat__blank {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+
+    @media only screen and (max-width: $bp-450) {
+
+        margin-top: 5rem;
+    }
+
+    &--container {
+        width: 60rem;
+        height: 75rem;
+        background-color: #C4C4C4;
+
+        @media only screen and (max-width: $bp-800) {
+            width: 80%;
+        }
+
+    }
+}
+
+.chat-del {
+    margin-top: 2.5rem;
+
+
+    &__heading {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.8rem;
+        text-align: center;
+        letter-spacing: 1.2px;
+        margin-top: 2rem;
+        color: #80A6D1;
+
+        @media only screen and (max-width: $bp-800) {
+            font-size: 3.2rem;
+        }
+
+        @media only screen and (max-width: $bp-450) {
+            font-size: 2rem;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+    }
+
+    &__bold {
+        font-family: Avenir;
+        margin-top: 1.5rem;
+        font-weight: normal;
+        font-size: 2rem;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #D69E8A;
+
+        @media only screen and (max-width: $bp-800) {
+            width: 85%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+
+        @media only screen and (max-width: $bp-450) {
+            width: 100%;
+            padding: 0 1rem;
+            font-size: 1.8rem;
+        }
+
+        @media only screen and (max-width: $bp-400) {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+
+    }
+
+    &__normal {
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #D69E8A;
+
+        @media only screen and (max-width: $bp-400) {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            padding: 0 2rem;
+        }
+
+    }
+
+}
+
+.chat-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem;
+    margin-top: 4rem;
+    padding-bottom: 8rem;
+
+
+
+    @media only screen and (max-width: $bp-800) {
+        padding: 0 2rem;
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-650) {
+        flex-direction: column;
+    }
+
+    @media only screen and (max-width: $bp-500) {
+        margin-top: 0rem;
+        font-size: 1.5rem;
+        padding-top: 0;
+    }
+
+
+
+    &__btn {
+
+        button {
+            background: $color-white;
+            color: #80A6D1;
+            border: 1px solid #80A6D1;
+            padding: 1rem 3rem;
+            font-size: 2rem;
+
+            @media only screen and (max-width: $bp-650) {
+                padding: 1.3rem 5rem;
+                margin-bottom: 3rem;
+
+                &:last-child {
+                    margin-top: 3rem;
+                }
+            }
+        }
+    }
+
+    &__social {
+        font-size: 3rem;
+        color: #c4c4c4;
+
+        @media only screen and (max-width: $bp-700) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-650) {
+            font-size: 3.5rem;
+        }
+
+        i {
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+        }
+    }
+}
+
+
+.chat-blog {
+
+
+    &__heading-up {
+        font-size: 4.6rem;
+        margin-bottom: 1.5rem;
+
+        @media only screen and (max-width: $bp-850) {
+            font-size: 3.6rem;
+            margin-top: -3rem;
+        }
+
+        @media only screen and (max-width: $bp-650) {
+            font-size: 3rem;
+        }
+    }
+
+    &__up-text {
+        width: 75%;
+
+        @media only screen and (max-width: $bp-850) {
+            width: 98%;
+            font-size: 1.4rem;
+            letter-spacing: .41px;
+        }
+
+        @media only screen and (max-width: $bp-650) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__heading-down {
+        font-size: 5rem;
+
+        @media only screen and (max-width: $bp-850) {
+            font-size: 4.4rem;
+            margin-bottom: 1rem;
+        }
+
+        @media only screen and (max-width: $bp-650) {
+            font-size: 4.78rem;
+        }
+    }
+
+    &__btn-down {
+        margin-bottom: 8rem;
+
+        @media only screen and (max-width: $bp-850) {
+            margin-bottom: 5rem;
+        }
+
+        @media only screen and (max-width: $bp-650) {
+            margin-top: 4rem;
+            padding: 2rem 7rem;
+        }
+    }
+}

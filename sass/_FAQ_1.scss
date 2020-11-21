@@ -1,0 +1,147 @@
+ .faq {
+     margin: 0 auto;
+     width: 65%;
+     background-color: #fff;
+     padding: 3rem 3rem;
+
+     @media only screen and (max-width: $bp-1050) {
+         width: 85%;
+     }
+
+     @media only screen and (max-width: $bp-900) {
+         width: 95%;
+     }
+
+     @media only screen and (max-width: $bp-600) {
+         margin-top: 21rem;
+         width: 92%;
+         padding: 2rem 1rem;
+     }
+
+     @media only screen and (max-width: $bp-450) {
+         margin-top: 20.6rem;
+     }
+
+     &__head {
+         margin-top: 21.8rem;
+         width: 100%;
+         display: grid;
+         grid-template-columns: 1fr min-content;
+         justify-items: center;
+         align-items: center;
+         margin-bottom: 1rem;
+
+         @media only screen and (max-width: $bp-800) {
+             margin-top: 17rem;
+         }
+
+         @media only screen and (max-width: $bp-600) {
+             margin-top: 0;
+             grid-template-columns: 1fr;
+             grid-row-gap: 2rem;
+             padding-bottom: 1.5rem;
+             border-bottom: 1px solid #999997;
+         }
+     }
+
+     &__heading {
+         font-weight: normal;
+         font-size: 30px;
+         line-height: 41px;
+         /* identical to box height */
+
+         text-align: center;
+         letter-spacing: 0.02em;
+
+         color: #CEA08E;
+
+         @media only screen and (max-width: $bp-600) {
+             font-size: 2.5rem;
+
+         }
+     }
+
+     &__search {
+         font-size: 2rem;
+         color: #999997;
+
+         @media only screen and (max-width: $bp-600) {
+             justify-self: end;
+         }
+     }
+
+
+     &__question-box {
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 2rem 0;
+
+         &:not(:last-child) {
+             border-bottom: 1px solid #999997;
+         }
+     }
+
+     &__question {
+         font-weight: normal;
+         font-size: 22px;
+         line-height: 30px;
+         letter-spacing: 0.02em;
+         color: #999997;
+
+         @media only screen and (max-width: $bp-600) {
+             font-size: 16px;
+             line-height: 22px;
+         }
+     }
+
+     &__collapse {
+         color: #999997;
+         font-size: 3rem;
+         font-weight: 300;
+         font-family: sans-serif;
+         font-weight: 100;
+
+         @media only screen and (max-width: $bp-600) {
+             align-self: flex-start;
+         }
+     }
+
+     &__btn {
+         background: $color-white;
+         padding-top: 2rem;
+         margin-bottom: 2rem;
+
+
+         @media only screen and (max-width: $bp-600) {
+             background: #f4f2f2;
+         }
+     }
+ }
+
+
+ .faq-donate {
+     @media only screen and (max-width: $bp-800) {
+         background: $color-white;
+     }
+
+     @media only screen and (max-width: $bp-600) {
+         background: #fafafa;
+     }
+ }
+
+
+ .faq_social {
+
+     @media only screen and (max-width: $bp-900) {
+         display: none;
+     }
+ }
+
+ .faq_fix-img {
+
+     @media only screen and (max-width: $bp-600) {
+         display: none;
+     }
+ }

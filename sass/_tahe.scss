@@ -1,0 +1,336 @@
+.tahe-header {
+
+    background: url('../img/image\ 71.png');
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+    background-attachment: fixed;
+    margin-top: 20.4rem;
+
+    @media only screen and (max-width: $bp-800) {
+        margin-top: 15rem;
+    }
+
+
+
+    @media only screen and (max-width: $bp-650) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: $bp-600) {
+        margin-top: 19rem;
+        margin-bottom: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-450) {
+        background-image: url('../img/tahe/tahe\ back\ res.png');
+        background-position: left bottom;
+        margin-top: 18rem;
+    }
+
+    &__logo {
+        width: 20rem;
+
+        @media only screen and (max-width: $bp-850) {
+            width: 12rem;
+        }
+
+        @media only screen and (max-width: $bp-650) {
+            width: 13rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &--img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: $color-white;
+        text-align: center;
+
+        &--heading {
+            font-size: 4rem;
+            font-weight: normal;
+            font-family: palmbeach;
+            margin-bottom: 1.4rem;
+        }
+
+        &--desc {
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            font-weight: normal;
+
+            @media only screen and (max-width: $bp-450) {
+                width: 75%;
+                text-align: center;
+            }
+        }
+
+        &--text {
+            font-size: 1.4rem;
+
+            @media only screen and (max-width: $bp-450) {
+                width: 75%;
+                letter-spacing: 1.4px;
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+
+//////////////////////////////Tahe Grid
+
+.tahe-grid {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    background: #FEFCF5;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-1150) {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    &__image {
+        width: 100%;
+        height: 100%;
+
+        &--img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        padding: 8rem 10rem;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        color: #80A6D1;
+
+        @media only screen and (max-width: $bp-800) {
+            padding: 5rem 8rem;
+        }
+
+        @media only screen and (max-width: $bp-550) {
+            padding: 5rem 3rem;
+            text-align: justify;
+        }
+    }
+}
+
+.tahe-col {
+    color: #AFC77B;
+
+}
+
+.tahe_nav {
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-800) {
+        padding-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-600) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+
+///////////////////Donde Section
+
+.donde {
+    width: 100%;
+    background: linear-gradient(to right, rgba(254, 252, 245, 0.705), rgba(254, 252, 245, 0.741)), url('../img/tahe-section-back.png') no-repeat bottom center/cover;
+
+    @media only screen and (max-width: $bp-850) {
+        background: linear-gradient(to right, rgba(254, 252, 245, 0.705), rgba(254, 252, 245, 0.741)), url('../img/tahe/image\ 71.png') no-repeat center center/cover;
+        padding: 4rem 0;
+    }
+
+
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem 8rem;
+        margin: 0 auto;
+        grid-column-gap: 17rem;
+
+        @media only screen and (max-width: $bp-1150) {
+            grid-column-gap: 8rem;
+        }
+
+        @media only screen and (max-width: $bp-950) {
+            grid-column-gap: 4rem;
+        }
+
+        @media only screen and (max-width: $bp-850) {
+            grid-row-gap: 2.4rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media only screen and (max-width: $bp-550) {
+            padding: 2rem 3rem;
+        }
+    }
+
+    &__box {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height: 51rem;
+
+        &--image {
+            width: 16rem;
+            height: 16rem;
+            margin-bottom: 1.3rem;
+
+
+            &-3 {
+                background: $color-white;
+                width: 16rem;
+                height: 16rem;
+                margin-bottom: 1.3rem;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid #AFC77B;
+                box-sizing: border-box;
+
+                img {
+                    width: 5rem;
+                }
+            }
+        }
+
+        &--img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &--name {
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            margin-bottom: 3rem;
+
+            &-1 {
+                color: #AFC77B;
+            }
+
+            &-2 {
+                color: #CABBA1;
+            }
+
+            &-3 {
+                color: #AFC77B;
+            }
+        }
+
+        &--text {
+            font-family: brandon;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: justify;
+            letter-spacing: 0.03em;
+            line-height: 2;
+            color: #664736;
+        }
+    }
+}
+
+
+.defunder {
+    background: #FEFCF5;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    &__heading-up {
+        font-size: 3rem;
+        font-family: font-secondary;
+        color: #D69E8A;
+        font-weight: normal;
+    }
+
+    &__heading-down {
+        color: #80A6D1;
+        font-size: 2.5rem;
+        font-weight: normal;
+        text-align: center;
+
+        @media only screen and (max-width: $bp-850) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-400) {
+            padding: 0 2rem;
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+.tahe__btn-back {
+    margin: 2rem 0;
+    height: 10rem;
+    background: #E4C2AF;
+
+    @media only screen and (max-width: $bp-850) {
+        height: 20rem;
+    }
+}
+
+.tahe__btn-te {
+    color: #D69E8A;
+    background: $color-white;
+    height: 4.4rem;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    width: 50rem;
+    border: none;
+    outline: none;
+    letter-spacing: 1.4px;
+
+    @media only screen and (max-width: $bp-850) {
+        width: 70%;
+        height: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-550) {
+        width: 85%;
+        height: 5.2rem;
+    }
+
+}

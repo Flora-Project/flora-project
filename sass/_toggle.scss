@@ -1,0 +1,149 @@
+//////////////////////////////////////////
+/////////////////////       Toggle Bar
+
+
+.toggle {
+    position: relative;
+    display: none;
+
+    @media only screen and (max-width: $bp-750) {
+        display: block;
+    }
+
+
+    &__check {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &__menu {
+
+        display: block;
+        margin-bottom: 1.2rem;
+        z-index: 400;
+        cursor: pointer;
+
+        &--bar {
+            width: 4rem;
+            background: $color-primary;
+            height: 2px;
+            display: flex;
+            transition: all 0.3s;
+
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+
+        }
+    }
+
+    &__extend {
+        width: 0%;
+        height: 100vh;
+        visibility: hidden;
+        opacity: 0;
+        background: $color-primary;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 300;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+
+    }
+
+    &__list {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        align-content: center;
+        justify-items: start;
+        justify-content: center;
+        transition: all 0.5s;
+        transform: translateY(10rem);
+        visibility: hidden;
+        opacity: 0;
+
+        li {
+            display: inline-block;
+            transition: all 0.4s;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-bottom: 2.5rem;
+            }
+
+            &::before {
+                content: "";
+
+                margin-right: 1rem;
+                font-size: 1.8rem;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                display: inline-block;
+                transition: all 0.3s;
+                opacity: 0;
+                visibility: hidden;
+            }
+
+
+            &:hover::before {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        a {
+            color: $color-white;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__check:checked~&__extend {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.5s;
+        width: 100%;
+        z-index: 800009;
+
+    }
+
+    &__check:checked~&__extend &__list {
+        transform: translateY(0rem);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__check:checked+&__menu {
+        position: fixed;
+        transform: translate(-10%, -50%);
+        z-index: 5768734;
+
+        @media only screen and (max-width: $bp-650) {
+            right: 2%;
+        }
+    }
+
+
+    &__check:checked+&__menu &__menu--bar-2 {
+        width: 0;
+        opacity: 0;
+    }
+
+    &__check:checked+&__menu &__menu--bar-1 {
+        transform: rotate(45deg) translateX(-.35rem) translateY(-0.2rem);
+        transform-origin: left;
+        background-color: $color-white;
+
+    }
+
+    &__check:checked+&__menu &__menu--bar-3 {
+        background-color: $color-white;
+        transform-origin: left;
+        transform: rotate(-45deg);
+    }
+}

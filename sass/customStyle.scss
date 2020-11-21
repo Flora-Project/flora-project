@@ -1,0 +1,223 @@
+@font-face {
+    font-family: font-primary;
+    src: url('../fonts/Clara.otf');
+}
+
+@font-face {
+    font-family: font-secondary;
+    src: url('../fonts/MrDeHaviland-Regular.ttf');
+}
+
+@font-face {
+    font-family: font-tertiary;
+    src: url('../fonts/Peaches\ and\ Cream\ Regular.otf');
+}
+
+@font-face {
+    font-family: marthina;
+    src: url('../fonts/Marthina-Script/Marthina\ Script.ttf');
+}
+
+@font-face {
+    font-family: avenir;
+    src: url('../fonts/avenirltstd-light.otf');
+}
+
+@font-face {
+    font-family: palmbeach;
+    src: url('../fonts/palmbeach-trial-cufonfonts/PalmBeach_Trial.otf');
+}
+
+@font-face {
+    font-family: peachcream;
+    src: url('../fonts/Peaches\ and\ Cream\ Regular.otf');
+}
+
+@font-face {
+    font-family: barlow;
+    src: url('../fonts/barlow/Barlow-Thin.ttf');
+}
+
+@font-face {
+    font-family: mplus;
+    src: url('../fonts/M-2p-thin/mplus-2p-thin.ttf');
+}
+
+@font-face {
+    font-family: montserret;
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Baskerville;
+    src: url('../fonts/Baskerville/LibreBaskerville-Regular.ttf');
+}
+
+@font-face {
+    font-family: lulo;
+    src: url('../fonts/FontsFree-Net-Lulo-Clean-W01-One-Bold.ttf');
+}
+
+@font-face {
+    font-family: brandon;
+    src: url('../fonts/Brandon-Grotesque/light.otf');
+}
+
+@font-face {
+    font-family: brandon;
+    src: url('../fonts/Brandon-Grotesque/');
+}
+
+
+
+
+
+
+
+
+
+
+
+$font-primary: font-primary;
+$font-secondary: font-secondary;
+$font-tertiary: font-tertiary;
+
+$color-primary: #D69E8A;
+$color-white : #fff;
+$color-blcack: #000;
+$color-grey: #555;
+$color-light: #eee;
+
+
+////////////////////////////////////////
+///////              Break Points
+
+$bp-1200: 75em;
+$bp-1150: 71.875em;
+$bp-1100: 68.75em;
+$bp-1050: 65.625em;
+$bp-1000: 62.5em;
+$bp-950: 59.375em;
+$bp-900: 56.25em;
+$bp-850: 53.125em;
+$bp-800: 50em;
+$bp-750: 46.875em;
+$bp-700: 43.75em;
+$bp-650: 40.625em;
+$bp-600: 37.5em;
+$bp-550: 34.375em;
+$bp-500: 31.25em;
+$bp-450: 28.125em;
+$bp-400: 25em;
+$bp-350: 21.875em;
+$bp-300: 18.75em;
+
+
+
+
+
+////////////////////////////////
+//          Genral Setting
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: avenir;
+    background: #fafafa;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+li {
+    list-style: none;
+}
+
+.active-link {
+    color: $color-primary !important;
+}
+
+
+.btn-primary {
+    transition: all 0.3s;
+
+    a {
+        color: $color-primary;
+    }
+
+    &:hover {
+        background: $color-primary;
+        color: $color-white;
+        cursor: pointer;
+    }
+
+    &:hover a {
+        color: $color-white;
+    }
+}
+
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+////////////////////////////////////////////
+////////////////////        Importing Pages
+
+@import "homepage";
+@import "slider";
+@import "toggle";
+@import "blog";
+@import "blog_2";
+@import "tahe";
+@import "chat";
+@import "flora";
+@import "covid";
+@import "gracias";
+@import "politics";
+@import "contact";
+@import "construccion";
+@import "FAQ_1";
+@import "FAQ_2";
+
+
+
+
+
+.lg-outer {
+    z-index: 7038434544 !important;
+}
+
+.lg-backdrop {
+    z-index: 43987943865 !important;
+}

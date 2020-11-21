@@ -1,0 +1,297 @@
+.grace {
+    width: 100%;
+    height: 148rem;
+    padding: 7rem 9rem;
+    padding-bottom: 0;
+    background: url('../img/tahe/chat\ back.png') no-repeat center center/cover, #FCEFE7;
+    position: relative;
+
+    @media only screen and (max-width: $bp-1150) {
+        padding: 6rem 4rem;
+    }
+
+    @media only screen and (max-width: $bp-800) {
+        height: 146rem;
+    }
+
+
+
+    @media only screen and (max-width: $bp-700) {
+        height: 162rem;
+        padding: 4rem 3rem;
+    }
+
+    @media only screen and (max-width: $bp-650) {
+        height: 170rem;
+        padding: 4rem 3rem;
+    }
+
+    @media only screen and (max-width: $bp-550) {
+        height: 150rem;
+    }
+
+    @media only screen and (max-width: $bp-500) {
+        height: 134rem;
+    }
+
+    @media only screen and (max-width: $bp-450) {
+        height: 133rem;
+    }
+
+    @media only screen and (max-width: $bp-400) {
+        height: 130rem;
+    }
+
+    @media only screen and (max-width: 380px) {
+        height: 128rem;
+    }
+
+    &__container {
+        padding: 7rem 0;
+        padding-bottom: 4rem;
+        background-color: $color-white;
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.329);
+
+        @media only screen and (max-width: $bp-500) {
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__logo {
+
+        width: 25rem;
+        margin: 1rem auto;
+
+
+        @media only screen and (max-width: $bp-1150) {
+            width: 18rem;
+        }
+
+        @media only screen and (max-width: $bp-550) {
+            width: 9.4rem;
+        }
+
+        img {
+            width: 100%;
+            // height: 100%;
+
+        }
+
+    }
+
+    &__heading {
+        font-family: $font-secondary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 120px;
+        line-height: 100px;
+        text-align: center;
+        display: block;
+
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        color: #D69E8A;
+
+        @media only screen and (max-width: $bp-1100) {
+            font-size: 90px;
+            letter-spacing: 0.02em;
+        }
+
+        @media only screen and (max-width: $bp-550) {
+            font-size: 4rem;
+            padding: 0 2rem;
+            line-height: 60px;
+        }
+
+    }
+
+    &__text {
+        text-align: center;
+
+        &--1 {
+            font-size: 28px;
+            line-height: 38px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #80A6D1;
+            margin-bottom: 4rem;
+
+            @media only screen and (max-width: $bp-1150) {
+                padding: 0 3rem;
+                margin-top: 3rem;
+            }
+
+            @media only screen and (max-width: $bp-500) {
+                font-size: 1.7rem;
+                line-height: 23px;
+                font-weight: bold;
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        &--2 {
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 34px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            margin-bottom: 4rem;
+
+            color: #D69E8A;
+
+            @media only screen and (max-width: $bp-500) {
+                font-size: 1.7rem;
+                line-height: 23px;
+                font-weight: bold;
+                padding: 0 2rem;
+
+            }
+        }
+
+        &--3 {
+            font-weight: normal;
+            margin-bottom: 6rem;
+            font-size: 28px;
+            line-height: 38px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #80A6D1;
+
+            @media only screen and (max-width: $bp-1150) {
+                padding: 0 6rem;
+            }
+
+            @media only screen and (max-width: $bp-500) {
+                font-size: 1.7rem;
+                line-height: 23px;
+                font-weight: bold;
+                padding: 0 2rem;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5rem;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 8rem;
+
+        @media only screen and (max-width: $bp-1000) {
+            padding: 0 2rem;
+        }
+
+        @media only screen and (max-width: $bp-800) {
+            margin-bottom: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-700) {
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+
+        &--btn {
+            padding: 1rem 2rem;
+            background-color: transparent;
+            outline: none;
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 44px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #80A6D1;
+            border: 0.3px solid #80A6D1;
+
+            &-1 {
+
+                @media only screen and (max-width: $bp-700) {
+
+                    margin-bottom: 3rem;
+                }
+            }
+
+            &-2 {
+                @media only screen and (max-width: $bp-700) {
+                    margin-top: 3rem;
+                }
+            }
+
+            @media only screen and (max-width: $bp-1000) {
+                font-size: 2rem;
+            }
+
+            @media only screen and (max-width: $bp-700) {
+                font-size: 2.1rem;
+                padding: 1rem 3rem;
+
+            }
+        }
+
+        &--social {
+            font-size: 4.5rem;
+            color: #ccc;
+
+            @media only screen and (max-width: $bp-1000) {
+                font-size: 2.8rem;
+            }
+
+            @media only screen and (max-width: $bp-700) {
+                font-size: 3rem;
+            }
+
+
+            i {
+                display: inline-block;
+
+                &:not(:last-child) {
+                    margin-right: 3rem;
+                }
+            }
+        }
+    }
+
+    &__img {
+        width: 45rem;
+        position: absolute;
+        bottom: -.2%;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        @media only screen and (max-width: $bp-500) {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+    &__blog--heading {
+        margin: 6rem 0;
+        margin-bottom: 3rem;
+        font-weight: normal;
+        font-size: 120px;
+        line-height: 100px;
+        /* identical to box height, or 83% */
+
+        text-align: center;
+        font-family: $font-secondary;
+        letter-spacing: 0.02em;
+
+        color: #80A6D1;
+
+        @media only screen and (max-width: $bp-1000) {
+            font-size: 10rem;
+        }
+
+        @media only screen and (max-width: $bp-500) {
+            font-size: 5rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+    }
+}
