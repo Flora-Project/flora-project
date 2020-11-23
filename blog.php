@@ -306,6 +306,7 @@
 
             ?>
 
+<<<<<<< HEAD
                 <div class="ultimas__container--box">
                     <div class="ultimas__container--img">
                         <img src="blogadmin/images/<?php echo $fetch1['photo'] ?>" alt="Ultimas Image">
@@ -324,6 +325,22 @@
                             <p class="ultimas__container--title">Escribir un comentario</p>
                             <i class="icon-heart1 ultimas__container--heart"></i>
                         </div>
+=======
+            <div class="ultimas__container--box">
+                <div class="ultimas__container--img">
+                    <img src="blogadmin/images/<?php echo $fetch1['photo'] ?>" alt="Ultimas Image">
+                </div>
+                <div class="ultimas__container--content">
+                    <a href="show_blog.php?id=<?php echo $fetch1['id'] ?>&category=<?php echo $fetch1['category']?>"><div class="ultimas__container--name"><?php echo $fetch1['title'] ?></div></a>
+                    
+                    <hr class="ultimas__container--line">
+                    <div class="ultimas__container--history">
+                        <!-- <div class="ultimas__container--eye">
+                            <i class="icon-eye"></i>
+                            <p>6</p>
+                        </div>
+                        <i class="icon-heart1 ultimas__container--heart"></i> -->
+>>>>>>> 50ecd835c98595ae754f93616b78aa645ca2cc78
                     </div>
                 </div>
             <?php
