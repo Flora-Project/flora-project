@@ -170,37 +170,39 @@
 
         <div class="blog__title--heading-bottom">Entrada destacada de la semana</div>
     </div>
-
+    <?php
+    $con=mysqli_connect("localhost", "root", "", "blog_admin_db");
+    $query="Select * from blogs";
+    $res = mysqli_query($con, $query);
+    while($row=mysqli_fetch_array($res))
+    {
+    $id = $row['id'];
+    ?>
     <section class="historia">
         <div class="historia__box">
             <div class="historia__box--img">
-                <img src="img/image 74.png" alt="Historia Image">
+            <img src="blogadmin/images/<?php echo $row['photo'] ?> ">
             </div>
             <div class="historia__box--content">
-                <p class="historia__box--name">Yo Soy Flora</p>
-                <p class="historia__box--name">Hace 5 horas - 1 min</p>
-                <h1 class="historia__box--heading">Gracias a ti nace una historia de amor.
+                <p class="historia__box--name"><?php echo $row['title']?></p>
+                <p class="historia__box--name"><?php echo $row['date']?></p>
+                <!-- <h1 class="historia__box--heading">Gracias a ti nace una historia de amor.
                 </h1>
-                <h1 class="historia__box--heading-res">Gracias a ti nace...</h1>
+                <h1 class="historia__box--heading-res">Gracias a ti nace...</h1> -->
 
-                <p class="historia__box--text">Gracias a ti nace una historia de amor y felicidad, donde dos almas
-                    destinadas se encuentran.
+                <p class="historia__box--text"><?php echo $row['content']?>
                 </p>
 
-                <p class="historia__box--text-res">Gracias a ti nace una historia ...</p>
-                <hr class="historia__box--line">
+                <!-- <p class="historia__box--text-res">Gracias a ti nace una historia ...</p> -->
+                <!-- <hr class="historia__box--line"> -->
 
-                <div class="historia__box--share">
-                    <div class="historia__box--watch">
-                        <i class="icon-eye"></i>
-                        <p>6</p>
-                    </div>
-                    <p class="historia__box--share-text">Escribir un comentario</p>
-                    <div><i class="icon-heart1"></i></div>
-                </div>
+
             </div>
         </div>
     </section>
+    <?php
+    }
+    ?>
 
 
     <section class="desta">
