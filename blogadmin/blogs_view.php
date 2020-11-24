@@ -32,6 +32,7 @@
 		"`blogs`.`author`" => "author",
 		"`blogs`.`posted`" => "posted"
 	);
+	
 	// mapping incoming sort by requests to actual query fields
 	$x->SortFields = array(   
 		1 => '`blogs`.`id`',
