@@ -140,18 +140,18 @@
             <img src="img/contacto/Tahe dona donar.png" alt="Contacto Image">
         </div>
 
-        <form class="contact__form">
+        <form class="contact__form" method="POST" action="submitform.php">
             <h1 class="contact__form--heading">FORMULARIO</h1>
             <div class="contact__form--group">
-                <input type="text" class="contact__form--input" placeholder="Nombre">
+                <input type="text" class="contact__form--input" name="name" required placeholder="Nombre">
             </div>
 
             <div class="contact__form--group">
-                <input type="text" class="contact__form--input" placeholder="Email">
+                <input type="text" class="contact__form--input" name="email" required placeholder="Email">
             </div>
             
             <div class="contact__form--group">
-                <textarea placeholder="Agregar un mensaje" class="contact__form--input" style="height: 6.5rem; padding-top: 0.5rem;"></textarea>
+                <textarea placeholder="Agregar un mensaje" name="message" required class="contact__form--input" style="height: 6.5rem; padding-top: 0.5rem;"></textarea>
             </div>
 
             <div class="contact__form--group">
