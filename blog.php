@@ -199,7 +199,7 @@
     ?>
 
 
-    <section class="desta">
+    <section class="desta" id="cblogs">
         <h1 class="desta__heading">Categorías destacadas</h1>
         <div class="desta__tags">
             <?php
@@ -210,27 +210,36 @@
 
             ?>
 
-                <button class="desta__tags--btn "> <a style="color: #D8A28F;" href="blog.php?category=<?php echo $data1['id'] ?>"><?php echo $data1['name'] ?></a></button>
+                <button class="desta__tags--btn "> <a style="color: #D8A28F;" href="blog.php?category=<?php echo $data1['id'] ?>#cblogs"><?php echo $data1['name'] ?></a></button>
 
 
             <?php
 
             }
             ?>
+
         </div>
         <!-- ////////////Blog Slider//////////// -->
 
-        <div class="home-blog__container blog-page">
-            <?php
-            include "connect.php";
-            if (isset($_GET['category'])) {
-                $uid = $_GET['category'];
 
-                $select = "select*from blogs where category='$uid' order by id limit 3";
-                $res = mysqli_query($con, $select);
+        <?php
+        include "connect.php";
+        if (isset($_GET['category'])) {
+            $uid = $_GET['category'];
+
+            $select = "select * from blogs where category='$uid' order by id limit 3";
+            $res = mysqli_query($con, $select);
+
+            if ($res->num_rows == 0) {
+        ?>
+                <h2 class="text-center">No blog with this category</h2>
+            <?php } ?>
+            <div class="home-blog__container blog-page">
+                <?php
+
                 while ($data = mysqli_fetch_array($res)) {
 
-            ?>
+                ?>
                     <div class="home-blog__box blog-page__box">
                         <div class="home-blog__box--img">
                             <img src="blogadmin/images/<?php echo $data['photo'] ?>" alt="Person 1">
@@ -255,7 +264,7 @@
             }
             ?>
 
-        </div>
+            </div>
     </section>
 
     <section class="navega">
@@ -306,7 +315,6 @@
 
             ?>
 
-<<<<<<< HEAD
                 <div class="ultimas__container--box">
                     <div class="ultimas__container--img">
                         <img src="blogadmin/images/<?php echo $fetch1['photo'] ?>" alt="Ultimas Image">
@@ -325,22 +333,6 @@
                             <p class="ultimas__container--title">Escribir un comentario</p>
                             <i class="icon-heart1 ultimas__container--heart"></i>
                         </div>
-=======
-            <div class="ultimas__container--box">
-                <div class="ultimas__container--img">
-                    <img src="blogadmin/images/<?php echo $fetch1['photo'] ?>" alt="Ultimas Image">
-                </div>
-                <div class="ultimas__container--content">
-                    <a href="show_blog.php?id=<?php echo $fetch1['id'] ?>&category=<?php echo $fetch1['category']?>"><div class="ultimas__container--name"><?php echo $fetch1['title'] ?></div></a>
-                    
-                    <hr class="ultimas__container--line">
-                    <div class="ultimas__container--history">
-                        <!-- <div class="ultimas__container--eye">
-                            <i class="icon-eye"></i>
-                            <p>6</p>
-                        </div>
-                        <i class="icon-heart1 ultimas__container--heart"></i> -->
->>>>>>> 50ecd835c98595ae754f93616b78aa645ca2cc78
                     </div>
                 </div>
             <?php
