@@ -50,13 +50,14 @@ thead {
 <th>Article date</th>
 <th></th>
 <th></th>
+<th></th>
 </tr>
 </thead>
 
 <tbody>
 <?php
 $con=mysqli_connect("localhost", "root", "", "blog_admin_db");
-$query="Select * from blogs where article_week=1";
+$query="Select * from blogs where article_week=1 ";
 
 $res = mysqli_query($con, $query);
 while($row=mysqli_fetch_array($res))
@@ -69,7 +70,7 @@ $id = $row['id'];
 <td><?php echo $row['posted']?></td>
 <td><?php echo $row['date']?></td>
 <td>
-<td><a href="article-of-week-remove.php?id=<?php echo $row['id']?>">Remove article</a></td>
+<td><a href="article-of-week-remove.php?id=<?php echo $row['id']?>">Remove article of the week</a></td>
 </td>
 </tr>
 <?php
@@ -77,7 +78,44 @@ $id = $row['id'];
 ?>
 </tbody>
  </table>
-   
+ <h1>Top blogs</h1>
+<table class="table table-one">
+<thead>
+<tr>
+<th>Article Title</th>
+<th>Article tag</th>
+<th>Article status</th>
+<th>Article date</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<?php
+$con=mysqli_connect("localhost", "root", "", "blog_admin_db");
+$query="Select * from blogs where top=1 ";
+
+$res = mysqli_query($con, $query);
+while($row=mysqli_fetch_array($res))
+{
+$id = $row['id'];
+?>
+<tr>
+<td><?php echo $row['title']?></td>
+<td><?php echo $row['tags']?></td>
+<td><?php echo $row['posted']?></td>
+<td><?php echo $row['date']?></td>
+<td>
+<td><a href="article-of-week-remove.php?id=<?php echo $row['id']?>">Remove Top blog</a></td>
+</td>
+</tr>
+<?php
+ }
+?>
+</tbody>
+ </table> 
 <h1>Add new Article of the week</h1>
 <table class="table table-two">
 <thead>
@@ -88,12 +126,13 @@ $id = $row['id'];
 <th>Article date</th>
 <th></th>
 <th></th>
+
 </tr>
 </thead>
 <tbody>
 <?php
 $con=mysqli_connect("localhost", "root", "", "blog_admin_db");
-$query="Select * from blogs";
+$query="Select * from blogs where article_week=0";
    
 $res = mysqli_query($con, $query);
 while($row=mysqli_fetch_array($res))
@@ -105,14 +144,49 @@ $id = $row['id'];
 <td><?php echo $row['tags']?></td>
 <td><?php echo $row['posted']?></td>
 <td><?php echo $row['date']?></td>
-<td><a href="article-of-week-add.php?id=<?php echo $row['id']?>">Make it New article of the week</a></td>
+<td><a href="article-of-week-add.php?id=<?php echo $row['id']?>">Make article of the week</a></td>
 </tr>
 <?php
  }
 ?>
 </tbody>
  </table>
+ </table> 
+<h1>Add Top Blog</h1>
+<table class="table table-two">
+<thead>
+<tr>
+<th>Article Title</th>
+<th>Article tag</th>
+<th>Article status</th>
+<th>Article date</th>
+<th></th>
+<th></th>
 
+</tr>
+</thead>
+<tbody>
+<?php
+$con=mysqli_connect("localhost", "root", "", "blog_admin_db");
+$query="Select * from blogs where top=0";
+   
+$res = mysqli_query($con, $query);
+while($row=mysqli_fetch_array($res))
+{
+$id = $row['id'];
+?>
+<tr>
+<td><?php echo $row['title']?></td>
+<td><?php echo $row['tags']?></td>
+<td><?php echo $row['posted']?></td>
+<td><?php echo $row['date']?></td>
+<td><a href="article-of-week-add.php?id=<?php echo $row['id']?>">Add it Top Blog</a></td>
+</tr>
+<?php
+ }
+?>
+</tbody>
+ </table>
 </div>
 </body>
 </html>

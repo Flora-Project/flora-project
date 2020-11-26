@@ -53,6 +53,7 @@ $row=mysqli_fetch_array($res);
  <input type="text" name="title" class="form-control" value="<?php echo $row['title'] ?>" readonly>
  <input type="hidden" value="1" name="article_week" />
  <button type="submit" class="btn btn-dark" name="btnSave">Click to publish as article of the week</button>
+ <button type="submit" class="btn btn-dark" name="btntop">Click to Make it Top article</button>
 </form> 
   </div>
 </div>
@@ -70,6 +71,23 @@ if(isset($_POST['btnSave']))
 $con=mysqli_connect("localhost", "root", "", "blog_admin_db");
 $article=1;
 $query="UPDATE `blogs` SET `article_week`='$article' WHERE id=$id";
+$res = mysqli_query($con, $query);
+    if($res)
+    {
+        echo "<script>window.location='article-of-week.php';</script>";
+    }
+    else
+    {
+        echo "invalid";
+    }
+}
+?>
+<?php 
+if(isset($_POST['btntop']))
+{
+$con=mysqli_connect("localhost", "root", "", "blog_admin_db");
+$article=1;
+$query="UPDATE `blogs` SET `top`='$article' WHERE id=$id";
 $res = mysqli_query($con, $query);
     if($res)
     {
