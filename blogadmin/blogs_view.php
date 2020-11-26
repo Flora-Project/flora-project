@@ -183,3 +183,14 @@
 		echo str_replace('<%%FOOTER%%>', $dFooter, $footerCode);
 	}
 ?>
+<script defer>
+	function change() {
+		var ul = document.querySelector("ul li ul");
+		var oldLi = ul.innerHTML;
+		var item = `<li><a href="article-of-week.php?t=1606380449"><img src="images/add_icon.gif" height="32"> Website Details</a></li>`;
+		var newLi = oldLi + item;
+		ul.innerHTML = newLi;
+		console.log(ul);
+	}
+	document.onload = change();
+</script>
