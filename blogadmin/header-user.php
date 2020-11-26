@@ -15,6 +15,22 @@
     <link href="css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   </head>
+  <style>
+.fa {
+    padding-right: 9px;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white !important;
+}
+.navbar-inverse .navbar-brand {
+    color: white !important;
+}
+.nav.navbar-nav.side-nav li:hover a {
+    background-color: white !important;
+    color: black !important;
+}
+
+  </style>
   <body>
    <div id="wrapper">
   <!-- Sidebar -->
