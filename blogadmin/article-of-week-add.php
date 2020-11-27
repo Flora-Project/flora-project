@@ -63,14 +63,46 @@ $row=mysqli_fetch_array($res);
 
 </body>
 </html>
-
-
+ <?php 
+if(isset($_POST['btnSave']))
+{
+$con=mysqli_connect("localhost", "root", "", "blog_admin_db");
+$art=0;
+$query="UPDATE `blogs` SET `article_week`='$art'";
+$res = mysqli_query($con, $query);
+    if($res)
+    {
+        echo "<script>window.location='article-of-week.php';</script>";
+    }
+    else
+    {
+        echo "invalid";
+    }
+}
+?>
  <?php 
 if(isset($_POST['btnSave']))
 {
 $con=mysqli_connect("localhost", "root", "", "blog_admin_db");
 $article=1;
 $query="UPDATE `blogs` SET `article_week`='$article' WHERE id=$id";
+$res = mysqli_query($con, $query);
+    if($res)
+    {
+        echo "<script>window.location='article-of-week.php';</script>";
+    }
+    else
+    {
+        echo "invalid";
+    }
+}
+?>
+<?php 
+if(isset($_POST['btntop']))
+{
+$con=mysqli_connect("localhost", "root", "", "blog_admin_db");
+$top=0;
+$query="UPDATE `blogs` SET `top`='$top'";
 $res = mysqli_query($con, $query);
     if($res)
     {
